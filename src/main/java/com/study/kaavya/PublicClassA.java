@@ -9,6 +9,16 @@ public class PublicClassA {
         this.test2 = test2;
     }
 
+    protected String getTest() {
+        return test;
+    }
+
+    protected void setTest(String test) {
+        this.test = test;
+    }
+
+    protected String test;
+
     public String getTest1() {
         return test1;
     }
