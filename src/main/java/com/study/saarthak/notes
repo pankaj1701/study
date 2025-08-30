@@ -1,0 +1,31 @@
+	Difference between abstraction and interfrace
+	1.	Keyword & Structure
+	•	Abstract class: Declared using the abstract keyword; can contain both abstract methods (without body) and concrete methods (with body).
+	•	Interface: Declared using the interface keyword; by default methods are abstract (Java 8+ allows default and static methods, Java 9+ allows private methods).
+	2.	Variables
+	•	Abstract class: Can have instance variables, static variables, and constants.
+	•	Interface: Only allows public static final constants (no instance variables).
+	3.	Inheritance
+	•	Abstract class: A class can extend only one abstract class (single inheritance).
+	•	Interface: A class can implement multiple interfaces (supports multiple inheritance).
+	4.	Access Modifiers in Methods
+	•	Abstract class: Methods can have any access modifier (public, protected, private).
+	•	Interface: All methods are public (implicitly).
+	5.	When to Use
+	•	Abstract class: Used when classes share a common base with some shared code (partial implementation).
+	•	Interface: Used when you want to define a contract or capabilities that can be applied to unrelated classes (no implementation sharing).
+
+	difference between abstraction and encapsulation
+	1. Meaning
+    	•	Abstraction: Hiding implementation details and showing only the essential features to the user. (Focus = What a class does).
+    	•	Encapsulation: Wrapping data (variables) and methods (functions) into a single unit (class) and controlling access. (Focus = How data is accessed/modified).
+    2. Implementation
+    	•	Abstraction: Achieved using abstract classes and interfaces.
+    	•	Encapsulation: Achieved using access modifiers (private, protected, public) with getters and setters.
+    3. Purpose
+    	•	Abstraction: To reduce complexity by separating what to do from how to do.
+    	•	Encapsulation: To protect data and ensure data security by restricting unauthorized access.
+    4. Relationship
+    	•	Abstraction: Deals with design level (hiding implementation).
+    	•	Encapsulation: Deals with implementation level (hiding data).
+    	
