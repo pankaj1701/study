@@ -1,4 +1,4 @@
-package com.study.saarthak.PracticeStaticFinal;
+package com.study.saarthak.practicestaticfinal;
 
 public class FinalMaths {
     final double pi= 3.14;

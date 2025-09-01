@@ -1,8 +1,6 @@
-package com.study.saarthak.PracticeStaticFinal;
+package com.study.saarthak.practicestaticfinal;
 
-import java.util.Scanner;
-
-public class maths {
+public class Maths {
     static void square(int a){
         int area=a*a;
         System.out.println("The area of sqaure is "+area);
