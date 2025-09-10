@@ -45,6 +45,8 @@ public class ExceptionExample {
 
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
 
     }
