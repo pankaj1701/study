@@ -7,7 +7,7 @@ public class BookShallow implements Cloneable{
         this.name=name;
         this.authorShallow=authorShallow;
     }
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public BookShallow shallowCone(){
+        return new BookShallow(this.name, this.authorShallow);
     }
 }

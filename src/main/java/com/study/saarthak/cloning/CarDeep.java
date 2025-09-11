@@ -7,9 +7,7 @@ public class CarDeep implements Cloneable {
         this.model = model;
         this.engineDeep = engineDeep;
     }
-    protected Object clone() throws CloneNotSupportedException {
-        CarDeep c = (CarDeep) super.clone();
-        c.engineDeep = (EngineDeep) this.engineDeep.clone();
-        return c;
+    public CarDeep deepClone(){
+        return new CarDeep(this.model, this.engineDeep.deepClone());
     }
 }

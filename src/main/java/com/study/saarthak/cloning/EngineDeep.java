@@ -5,7 +5,7 @@ public class EngineDeep implements Cloneable{
     EngineDeep(int horsepower){
         this.horsepower=horsepower;
     }
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public EngineDeep deepClone(){
+        return new EngineDeep(this.horsepower);
     }
 }

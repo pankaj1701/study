@@ -10,7 +10,7 @@ public class StudentCloneShallow implements Cloneable {
     }
 
 
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public StudentCloneShallow shallowClone(){
+        return new StudentCloneShallow(this.id, this.name);
     }
 }

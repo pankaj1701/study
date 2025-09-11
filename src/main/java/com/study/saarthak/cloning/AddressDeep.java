@@ -10,7 +10,7 @@ public class AddressDeep implements Cloneable {
     }
 
 
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public AddressDeep deepClone(){
+        return new AddressDeep(this.city , this.state);
     }
 }

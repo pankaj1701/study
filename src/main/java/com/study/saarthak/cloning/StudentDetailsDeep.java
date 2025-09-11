@@ -12,9 +12,7 @@ public class StudentDetailsDeep implements Cloneable {
     }
 
     // Deep clone for Student
-    protected Object clone() throws CloneNotSupportedException {
-        StudentDetailsDeep s = (StudentDetailsDeep) super.clone();
-        s.address = (AddressDeep) address.clone(); // clone inner object too
-        return s;
+    public StudentDetailsDeep deepClone(){
+        return new StudentDetailsDeep(this.id, this.name, this.address.deepClone());
     }
 }
