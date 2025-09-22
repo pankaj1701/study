@@ -17,6 +17,7 @@ public class Immutable {
         System.out.println("Car model "+c1.getModel()+" Horsepower "+c1.getHorsepower());
         ImmutableCar c2 = c1.withHorsepower(2000);
         System.out.println("Car name "+ c2.getModel()+ " Updated horsepower "+c2.getHorsepower());
+        System.out.println("Car model "+c1.getModel()+" Horsepower "+c1.getHorsepower());
 
     }
 }

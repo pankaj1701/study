@@ -7,7 +7,7 @@ public class OddThread extends Thread {
             System.out.println("Odd number "+num);
             num+=2;
             try{
-                Thread.sleep(200);
+                Thread.sleep(150);
             }catch(InterruptedException e){
                 e.printStackTrace();
             }
